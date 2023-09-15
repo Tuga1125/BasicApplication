@@ -16,7 +16,7 @@ export default function BasicApp() {
   return (
     <View style={{ ...styles.container, backgroundColor }}>
 
-        <Text style={styles.header}>Tooga Basic App</Text>
+      <Text style={styles.header}>Tooga Basic App</Text>
 
       <TextInput style={styles.textinput}
         onChangeText={text => onChangeText(text)}
@@ -25,7 +25,7 @@ export default function BasicApp() {
 
       <Button title='Clear' onPress={() => onChangeText('')} />
 
-          <Button title={isLightBackground ? 'Change Background' : 'Change Background'} onPress={() => handleBackgroundChange(isLightBackground ? 'black' : 'white')} />
+      <Button title={isLightBackground ? 'Change Background' : 'Change Background'} onPress={() => handleBackgroundChange(isLightBackground ? 'black' : 'white')} />
 
       <Text style={styles.text}> {value} </Text>
 
