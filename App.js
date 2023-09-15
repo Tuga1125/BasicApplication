@@ -17,6 +17,9 @@ export default function BasicApp() {
         value={value} clearTextonFocus='false'
       />
 
+    <Button title='Clear' onPress={() => onChangeText('')} />
+
+
       <Text style={styles.text}> {value} </Text>
 
     </View>
